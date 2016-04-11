@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  //方式一：
+	person01 = new Object();
+	person01.firstName = "Bill";
+	person01.lastName = "Gates";
+	person01.age = 25;
+	person01.country = "USA";
+	document.write(person01.firstName+" "+person01.lastName+":<br /> Age: "+person01.age+", Country: "+person01.country+"<br />");
+   //方式二：
+	person02 = {firstName:"Job",lastName:"Bush",age:50,country:"USA"};
+	document.write(person02.firstName+" "+person02.lastName+":<br /> Age: "+person02.age+", Country: "+person01.country);
+  </script>
+ </body>
+</html>

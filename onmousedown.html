@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <div onmousedown="mDown(this)" onmouseUp="mUp(this)" style="background-color:green;color:#ffffff;width:90px;height:20px;padding:40px;font-size:12px;">
+	请点击这里
+  </div>
+  <br />
+  <br />
+  <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="pic/eg_bulboff.gif"/>
+  <script>
+	function mDown(obj)
+	{
+		obj.style.backgroundColor="#1ec5e5";
+		obj.innerHTML="请释放鼠标按钮";
+	}
+	function mUp(obj)
+	{
+		obj.style.backgroundColor="green";
+		obj.innerHTML="请按下鼠标按钮";
+	}
+	function lighton()
+	{
+		document.getElementById('myimage').src="pic/eg_bulbon.gif";
+	}
+	function lightoff()
+	{
+		document.getElementById('myimage').src="pic/eg_bulboff.gif";
+	}
+  </script>
+ </body>
+</html>

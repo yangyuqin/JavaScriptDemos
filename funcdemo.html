@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <input type="button" value="调用无参函数" onclick="MyFunction1()"/><br /><br />
+	<input type="button" value="调用带参函数" onclick="MyFunction2('Harry',25)"/><br /><br />
+	<p>本例调用的函数会执行一个计算，然后返回结果：</p>
+	<p id="demo"></p>
+	<script>
+		//无参函数
+		function MyFunction1(){
+			alert("Welcome");
+		}
+
+		//带有参数的函数
+		function MyFunction2(name,age){
+			alert("Welcome: "+ name +"; Age:" + age);
+		}
+
+		//带有返回值的函数	
+		function MyFunction3(a,b)
+		{
+			return a*b;
+		}
+		document.getElementById("demo").innerHTML = MyFunction3(4,3);
+	</script>
+ </body>
+</html>

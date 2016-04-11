@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:green;width:120px;height:60px;padding:40px;color:white;text-align:center;">
+  把鼠标移到上面
+  </div>
+	<script>
+		function mOver(id){
+			id.innerHTML = "谢谢";
+		}
+		function mOut(id){
+			id.innerHTML = "把鼠标移到上面";
+		}
+	</script>
+ </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+	function person(firstName,lastName,age,country){
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.age=age;
+		this.country=country;
+	}
+	myFather=new person("Bill","Gates",56,"USA");
+	document.write(myFather.firstName + " is " + myFather.age + " years old.");
+  </script>
+ </body>
+</html>

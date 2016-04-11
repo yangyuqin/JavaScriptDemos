@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+	<h4>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</h4>
+	<input type="text" id="demo"/>
+	<script>
+		function MyFunction(){
+			var x=document.getElementById("demo").value;
+			if(x==""||isNaN(x)){
+				alert("Not Number");
+			}
+		}
+	</script>
+	<input type="button" onclick="MyFunction()" value="点击这里"/>
+ </body>
+</html>

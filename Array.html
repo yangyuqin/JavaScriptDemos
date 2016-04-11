@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var mycars = new Array();
+		mycars[0] = "Saab";
+		mycars[1] = "Volvo";
+		mycars[2] = "BMW";
+		var mybooks = Array("Java","JavaScript","Python","Linux");
+		var arr = new Array(6);
+			arr[0] = "10";
+			arr[1] = "5";
+			arr[2] = "40";
+			arr[3] = "25";
+			arr[4] = "1000";
+			arr[5] = "1";
+		bianliArray(mycars);
+		//连接数组concat
+		var newArray = mycars.concat(mybooks);
+		document.write("concat连接数组为："+newArray+"<br /><br />");
+		//弹出最后一个元素
+		document.write("Pop弹出元素为："+mycars.pop()+"<br /><br />");
+		//添加一个新的元素到末尾
+		document.write("push添加元素后长度："+mycars.push("Audi")+"<br /><br />");
+		//数组元素组成字符串join
+		document.write("默认转成字符串："+mybooks.join()+"<br />");
+		document.write("使用顿号转成字符串："+mybooks.join("、")+"<br /><br />");
+		//排序
+		document.write("使用字母排序："+mycars.sort()+"<br />");
+		document.write("使用数字排序："+arr.sort(sortNumber)+"<br />");
+		function sortNumber(a, b)
+		{
+			return a - b;
+		}
+
+		function bianliArray(array){
+			var x;
+			document.write("遍历数组：<br />");
+			for (x in array)
+			{
+				document.write(array[x] + "<br />");
+			}
+			document.write("<br />");
+		}
+	</script> 
+ 
+ </body>
+</html>

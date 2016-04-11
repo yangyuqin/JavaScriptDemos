@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<script>
+		//无参函数
+		function MyFunction1(){
+			alert("Welcome");
+		}
+		//带有参数的函数
+		function MyFunction2(name, age){
+			alert("Welcome: "+ name "; Age:"+age);
+		}
+	</script>
+ </body>
+</html>
